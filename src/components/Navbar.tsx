@@ -14,7 +14,7 @@ const Navbar = async () => {
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">
           <Link href="/" className="flex z-40 font-semibold">
-            <span className="text-green-600">Stickie</span>
+            <span className="text-xl font-bold text-green-600">Stickie</span>
           </Link>
 
           <div className="h-full flex items-center space-x-4">
@@ -27,7 +27,7 @@ const Navbar = async () => {
                     variant: "ghost",
                   })}
                 >
-                  Sign out
+                  <span className="text-sm font-bold text-gray-900">Sign out</span>
                 </Link>
                 {isAdmin ? (
                   <Link
@@ -37,7 +37,7 @@ const Navbar = async () => {
                       variant: "ghost",
                     })}
                   >
-                    Dashboard ✨
+                    <span className="text-sm font-bold text-gray-900">Dashboard ✨</span>
                   </Link>
                 ) : null}
                 <Link
@@ -47,7 +47,7 @@ const Navbar = async () => {
                     className: "hidden sm:flex items-center gap-1",
                   })}
                 >
-                  Create case
+                  <span className="text-sm font-bold">Create case</span>
                   <ArrowRight className="ml-1.5 h-5 w-5" />
                 </Link>
               </>
@@ -60,7 +60,7 @@ const Navbar = async () => {
                     variant: "ghost",
                   })}
                 >
-                  Sign up
+                  <span className="text-sm font-bold text-gray-900">Sign up</span>
                 </Link>
                 <Link
                   href="/api/auth/login"
@@ -69,7 +69,7 @@ const Navbar = async () => {
                     variant: "ghost",
                   })}
                 >
-                  Login
+                  <span className="text-sm font-bold text-gray-900">Login</span>
                 </Link>
 
                 <div className="h-8 w-px bg-zinc-200 hidden sm:block"></div>
@@ -80,7 +80,7 @@ const Navbar = async () => {
                     className: "hidden sm:flex items-center gap-1",
                   })}
                 >
-                  Create case
+                  <span className="text-sm font-bold">Create case</span>
                   <ArrowRight className="ml-1.5 h-5 w-5" />
                 </Link>
               </>

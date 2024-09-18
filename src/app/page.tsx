@@ -1,6 +1,8 @@
-import { Icons } from "@/components/Icons";
+import Underline from "@/components/Underline";
+import Phone from "@/components/Phone";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Check, Phone, Star } from "lucide-react";
+import { Check, Star } from "lucide-react";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -99,8 +101,7 @@ export default function Home() {
                 src="/line.png"
                 className="absolute w-20 -left-6 -bottom-6 select-none"
               />
-              <img className="w-64" src="/testimonials/1.jpg" />{" "}
-              {/* Tried adding Phone attribute using HTMLAttributes but doesn't work*/}
+              <Phone className="w-64" imgSrc="/testimonials/1.jpg" />{" "}
             </div>
           </div>
         </MaxWidthWrapper>
@@ -112,9 +113,10 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
             <h2 className="order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
               What our{" "}
-              <span className="relative px-2">
-                customers <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500" />
-              </span>{" "}
+              <span className="text-green-500 mx-1 font-extrabold text-6xl relative inline-block stroke-current">
+                customers
+                <Underline/>
+              </span> {" "}
               say
             </h2>
           </div>
